@@ -1,0 +1,2 @@
+/usr/bin/ar qc libproj-lib.a CMakeFiles/proj-lib.dir/ext-lib/MQTT-C/src/mqtt_pal.c.o CMakeFiles/proj-lib.dir/ext-lib/MQTT-C/src/mqtt.c.o CMakeFiles/proj-lib.dir/src/MCP3008.cpp.o CMakeFiles/proj-lib.dir/src/temp_sensor.cpp.o CMakeFiles/proj-lib.dir/src/mqtt_publish.cpp.o
+/usr/bin/ranlib libproj-lib.a

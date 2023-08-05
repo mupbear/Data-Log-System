@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mqtt_pub.dir/main.cpp.o CMakeFiles/mqtt_pub.dir/MCP3008.cpp.o CMakeFiles/mqtt_pub.dir/temp_sensor.cpp.o -o mqtt_pub  libmqttc.a -lnsl -lpthread -llgpio 

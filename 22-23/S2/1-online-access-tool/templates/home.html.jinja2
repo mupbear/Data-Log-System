@@ -1,0 +1,50 @@
+{% extends "base/base.html.jinja2" %}
+{% set active_page = "home" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for_static_asset('static', 'css/home.css') }}">
+{% endblock head %}
+
+{% block main %}
+<img src="{{ url_for_static_asset('static', 'img/car1.jpeg')  }}" alt="Car #1" class="car1">
+<img src="{{ url_for_static_asset('static', 'img/car2.jpeg')  }}" alt="Car #2 "class="car2">
+
+<a href="https://regterschotracing.com/" target="_blank">
+  <img src="{{ url_for_static_asset('static', 'img/reg_race.png')  }}" alt="Company link" class="reg_race">
+</a>
+    
+<!-- <h1>Hello, <?php echo $_SESSION['username']; ?></h1> -->
+     
+<form class="topright" method="POST" action="../scripts/logout.php" >   
+  <button> Logout </button>
+</form>
+
+<form class="topright right" method="POST" action="admin/admin.php">   
+  <button > Admin </button>
+</form>
+     
+<form method="GET" action="event">
+  <p class="center">Please select a data event:</p>
+  <select name:"event">
+      <option value="event1">Event 1</option>
+      <option value="event2">Event 2</option>
+      <option value="event3">Event 3</option>
+  </select>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+<div class="links-container">
+  <a href="https://www.instagram.com/regterschotracing/" target="_blank">
+    <img src="{{ url_for_static_asset('static', 'img/instagram.png') }}" alt ="Instagram link">
+  </a>
+  <a href="https://www.tiktok.com/@regterschotracing" target="_blank">
+    <img src="{{ url_for_static_asset('static', 'img/tiktok.png') }}" alt ="Tiktok link">
+  </a>
+  <a href="https://www.facebook.com/RegterschotRacing" target="_blank">
+    <img src="{{ url_for_static_asset('static', 'img/facebook.png') }}" alt ="Facebook link">
+  </a>
+</div>
+
+<div class="curvy-line"></div>
+{% endblock main %}

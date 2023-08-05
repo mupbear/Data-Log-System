@@ -1,0 +1,13 @@
+# ninja log v5
+25	933	6916193438732480	CMakeFiles/mqttc.dir/MQTT-C-master/src/mqtt_pal.c.obj	a715048d84c6037e
+11	997	6916193439378584	CMakeFiles/mqttc.dir/MQTT-C-master/src/mqtt.c.obj	912d8f731fed55f8
+2	939	6916193712840057	CMakeFiles/mqtt_sub.dir/main.cpp.obj	2fdadc30572c698e
+997	1110	6916193440510537	libmqttc.a	57c74fe7d33f47dc
+940	1069	6916193714096578	mqtt_sub.exe	db91d2331626de98
+62	1301	6919433620754685	CMakeFiles/mqttc.dir/MQTT-C-master/src/mqtt_pal.c.obj	3341142bbffba6e0
+19	1430	6919433622038347	CMakeFiles/mqttc.dir/MQTT-C-master/src/mqtt.c.obj	83c1a56b215b982f
+1430	1571	6919433623421394	libmqttc.a	57c74fe7d33f47dc
+5	1573	6919433623462253	CMakeFiles/mqtt_sub.dir/main.cpp.obj	8ac6573cd511c453
+1573	1714	6919433624818882	mqtt_sub.exe	db91d2331626de98
+4	1736	6919433865028152	CMakeFiles/mqtt_sub.dir/main.cpp.obj	8ac6573cd511c453
+1736	1883	6919433866347442	mqtt_sub.exe	db91d2331626de98

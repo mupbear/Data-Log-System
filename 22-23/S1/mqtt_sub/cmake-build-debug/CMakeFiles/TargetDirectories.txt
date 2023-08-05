@@ -1,0 +1,4 @@
+C:/Users/Dana/Documents/Regterschot_Engineering/Data-Log-System-S3/mqtt_sub/cmake-build-debug/CMakeFiles/mqtt_sub.dir
+C:/Users/Dana/Documents/Regterschot_Engineering/Data-Log-System-S3/mqtt_sub/cmake-build-debug/CMakeFiles/mqttc.dir
+C:/Users/Dana/Documents/Regterschot_Engineering/Data-Log-System-S3/mqtt_sub/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Dana/Documents/Regterschot_Engineering/Data-Log-System-S3/mqtt_sub/cmake-build-debug/CMakeFiles/rebuild_cache.dir

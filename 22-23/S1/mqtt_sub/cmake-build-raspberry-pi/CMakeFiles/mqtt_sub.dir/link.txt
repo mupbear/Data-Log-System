@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/mqtt_sub.dir/main.cpp.o -o mqtt_sub  libmqttc.a -lnsl -lpthread 

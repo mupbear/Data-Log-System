@@ -1,0 +1,7 @@
+Linux-CAN-Data-Logger.key
+Linux-CAN-Data-Logger.key.pub
+venv
+build
+dist
+*.spec
+__pycache__

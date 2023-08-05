@@ -1,0 +1,4 @@
+/home/pi/Desktop/Data-Log-System-S3/mqtt_pub/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_pub/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_pub/CMakeFiles/mqttc.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_pub/CMakeFiles/mqtt_pub.dir

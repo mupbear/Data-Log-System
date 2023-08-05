@@ -1,0 +1,1694 @@
+[
+    {
+        "id": "df9e221041ac63dd",
+        "type": "tab",
+        "label": "rapid-prototype",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "28ce83765b4a4deb",
+        "type": "tab",
+        "label": "Flow - Display Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2299ce1c5e0e7477",
+        "type": "tab",
+        "label": "Flow - Intercept data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "429968caebe471ef",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "ebb43b78b7150a04",
+        "type": "ui_tab",
+        "name": "History",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "96c7cdc64ffa9d1d",
+        "type": "ui_tab",
+        "name": "Live Data",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f51f8dc65510d76c",
+        "type": "ui_group",
+        "name": "Buttons",
+        "tab": "96c7cdc64ffa9d1d",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fe9ac9b5f6fbd91d",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "96c7cdc64ffa9d1d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cb84da6001da9bbe",
+        "type": "ui_group",
+        "name": "Value",
+        "tab": "96c7cdc64ffa9d1d",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4a8a4666a1b48caf",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "96c7cdc64ffa9d1d",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "caa7086cf8045790",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "def5a93f90d2f90d",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "rapid-prototype",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6dc0c4c0cd1ec4d4",
+        "type": "serial-port",
+        "serialport": "COM14",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "c0eaf4bfefec7d9b",
+        "type": "mqtt-broker",
+        "name": "admin-broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "d18fd53d04b9d41a",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "project-version-1",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "5c90522827cfb443",
+        "type": "ui_group",
+        "name": "Table",
+        "tab": "ebb43b78b7150a04",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "355e319af2eac0e5",
+        "type": "mysql",
+        "z": "df9e221041ac63dd",
+        "mydb": "def5a93f90d2f90d",
+        "name": "Rapid-Prototype",
+        "x": 620,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f95e28d5f5adcc5",
+        "type": "inject",
+        "z": "df9e221041ac63dd",
+        "name": "Create Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE wheelSpeedSensor(   p_Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,   Atime TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,   Speed int  DEFAULT NULL );",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9519aa4086499460",
+        "type": "function",
+        "z": "df9e221041ac63dd",
+        "name": "convertMySQL",
+        "func": "var dataString = msg.payload;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [dataInt];\n\nmsg.topic = 'INSERT INTO wheelSpeedSensor(Speed) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 180,
+        "wires": [
+            [
+                "355e319af2eac0e5",
+                "13ca48fe7ce4ac03"
+            ]
+        ]
+    },
+    {
+        "id": "9f87a5e20d7e5459",
+        "type": "inject",
+        "z": "df9e221041ac63dd",
+        "name": "Inject Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "str",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f268192666bb99ab",
+        "type": "debug",
+        "z": "df9e221041ac63dd",
+        "name": "Data from Arduino",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "13ca48fe7ce4ac03",
+        "type": "debug",
+        "z": "df9e221041ac63dd",
+        "name": "Data to Database",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "972bcac3846b819e",
+        "type": "inject",
+        "z": "df9e221041ac63dd",
+        "name": "Delete Table",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DROP TABLE wheelSpeedSensor;",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b46c5a0fdaf9fa9",
+        "type": "mysql",
+        "z": "df9e221041ac63dd",
+        "mydb": "def5a93f90d2f90d",
+        "name": "Rapid-Prototype",
+        "x": 380,
+        "y": 420,
+        "wires": [
+            [
+                "c25185f22c1dc13c",
+                "e0a8fb9378e57e4e"
+            ]
+        ]
+    },
+    {
+        "id": "250902b550be59a3",
+        "type": "ui_button",
+        "z": "df9e221041ac63dd",
+        "name": "wheelSpeedSensor",
+        "group": "f51f8dc65510d76c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Wheel Speed Sensor",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "SELECT * FROM   wheelspeedsensor;",
+        "topicType": "str",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "e303eb59b37acea6"
+            ]
+        ]
+    },
+    {
+        "id": "297f154fb445b966",
+        "type": "comment",
+        "z": "df9e221041ac63dd",
+        "name": "Live Data",
+        "info": "This button is used to grab the live feed (10 most recent entries) and display on dashboard\nIn reality it wont be a button but a delay of 1 sec",
+        "x": 360,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6ac3826c03d215b2",
+        "type": "comment",
+        "z": "df9e221041ac63dd",
+        "name": "Convert to MySQL",
+        "info": "With Inject data you send data to a convert function\nThis function converts it to MySQL and sends it to database",
+        "x": 390,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c3a70a0ae2572d71",
+        "type": "debug",
+        "z": "df9e221041ac63dd",
+        "name": "Command to Database",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 410,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "516683b19fe67646",
+        "type": "debug",
+        "z": "df9e221041ac63dd",
+        "name": "MySQL data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e0a8fb9378e57e4e",
+        "type": "ui_table",
+        "z": "df9e221041ac63dd",
+        "group": "fe9ac9b5f6fbd91d",
+        "name": "Recent Data",
+        "order": 2,
+        "width": "3",
+        "height": "10",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 750,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "51a7c004d668e4db",
+        "type": "ui_text",
+        "z": "df9e221041ac63dd",
+        "group": "cb84da6001da9bbe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Live text",
+        "label": "Live:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 700,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d9de5b7b86d1cc20",
+        "type": "ui_chart",
+        "z": "df9e221041ac63dd",
+        "name": "Live Feed",
+        "group": "4a8a4666a1b48caf",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Live Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#31c214",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 740,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c25185f22c1dc13c",
+        "type": "function",
+        "z": "df9e221041ac63dd",
+        "name": "convertChart",
+        "func": "var x;\nvar y;\n\nvar allData = msg.payload; // data incoming from MySQL\nvar data = []; //data sent to chart\n\nfor (let index = 0; index < allData.length; index++) {\n\n    const object = allData[index]; //{ p_Id: 5, Atime: 6, Speed: 7 };\n    const picked = (({ Atime, Speed }) => ({ Atime, Speed }))(object);\n    data[index] = picked;\n    //console.log(picked);  { a: 5, c: 7 }\n      \n}\nfor (let index = 0; index < data.length; index++) {\n    \n    const str = data[index].Atime;\n    const date = new Date(str);\n\n    const timestamp = date.getTime();\n    data[index].Atime = timestamp;\n    \n} \n\ndata = data.map(({Atime: x, Speed: y}) => ({x, y}));\n/*const newData = data.map(item =>\n    ({ x: item.name, y: item.title })\n);*/\n\n msg.payload = [{\n    \"series\": [\"A\", \"B\", \"C\"],\n    \"data\": [data],\n    \"labels\": [\"room1\", \"room2\", \"room3\"]\n}] \n \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "d9de5b7b86d1cc20",
+                "516683b19fe67646"
+            ]
+        ]
+    },
+    {
+        "id": "03b963e63903a147",
+        "type": "serial in",
+        "z": "df9e221041ac63dd",
+        "d": true,
+        "name": "Arduino",
+        "serial": "6dc0c4c0cd1ec4d4",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "9519aa4086499460",
+                "f268192666bb99ab",
+                "51a7c004d668e4db"
+            ]
+        ]
+    },
+    {
+        "id": "d7fc8754ec55d0ea",
+        "type": "inject",
+        "z": "df9e221041ac63dd",
+        "name": "Live Data UI",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "SELECT * FROM   wheelspeedsensor ORDER  BY Atime DESC LIMIT 10;",
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "7b46c5a0fdaf9fa9",
+                "c3a70a0ae2572d71"
+            ]
+        ]
+    },
+    {
+        "id": "e303eb59b37acea6",
+        "type": "mysql",
+        "z": "df9e221041ac63dd",
+        "mydb": "def5a93f90d2f90d",
+        "name": "Rapid-Prototype",
+        "x": 360,
+        "y": 640,
+        "wires": [
+            [
+                "01e64eabb78a2fac"
+            ]
+        ]
+    },
+    {
+        "id": "01e64eabb78a2fac",
+        "type": "ui_table",
+        "z": "df9e221041ac63dd",
+        "group": "5c90522827cfb443",
+        "name": "Recent Data",
+        "order": 1,
+        "width": "3",
+        "height": "10",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 630,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "96c897d8f6aff518",
+        "type": "comment",
+        "z": "df9e221041ac63dd",
+        "name": "History",
+        "info": "",
+        "x": 350,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0b5ebd773dbb9152",
+        "type": "mysql",
+        "z": "28ce83765b4a4deb",
+        "mydb": "d18fd53d04b9d41a",
+        "name": "Verison-1",
+        "x": 940,
+        "y": 260,
+        "wires": [
+            [
+                "9acecbcc3a993263"
+            ]
+        ]
+    },
+    {
+        "id": "fd2b726671ac8213",
+        "type": "comment",
+        "z": "28ce83765b4a4deb",
+        "name": "Live Data",
+        "info": "This button is used to grab the live feed (10 most recent entries) and display on dashboard\nIn reality it wont be a button but a delay of 1 sec",
+        "x": 680,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "512fc1976ab6b731",
+        "type": "ui_text",
+        "z": "28ce83765b4a4deb",
+        "group": "cb84da6001da9bbe",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Live text",
+        "label": "Live:",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 1380,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "66a647a991467759",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "wheelSpeed1",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "wheelSpeed1",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 240,
+        "wires": [
+            [
+                "a63ad29d430e4825",
+                "9def947f14f2cd4d",
+                "830f1168d403e621"
+            ]
+        ]
+    },
+    {
+        "id": "bea3d12bb089bc3e",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "wheelSpeed2",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "wheelSpeed2",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 300,
+        "wires": [
+            [
+                "9def947f14f2cd4d",
+                "830f1168d403e621"
+            ]
+        ]
+    },
+    {
+        "id": "7f46ebe349f683a3",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "wheelSpeed3",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "wheelSpeed3",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ca6fd68e88264082",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "wheelSpeed4",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "wheelSpeed4",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "820b0e5b50ce262d",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "Wheel speed",
+        "group": "f51f8dc65510d76c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "wheelButton",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "wheelSpeed",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "msg",
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "66a647a991467759",
+                "bea3d12bb089bc3e"
+            ]
+        ]
+    },
+    {
+        "id": "a63ad29d430e4825",
+        "type": "function",
+        "z": "28ce83765b4a4deb",
+        "name": "Button Display",
+        "func": "var message = msg.payload;\nvar speed1 = context.get('wheelSpeed1') || 0 ;\n\nvar speed = new Int8Array(4);\nconst temperature = new Int8Array(2);\nconst pressure = new Int8Array(2);\n\nif ( msg.topic == \"wheelSpeed1\")\n{\n    speed[0] = 1;\n    msg.payload = speed;\n}\n\nif (flow.wheelSpeed2 == true) {\n    speed[1] = 1;\n \n}\nif (flow.wheelSpeed3 == true) {\n    speed[2] = 1;\n\n}\nif (flow.wheelSpeed4 == true) {\n    speed[3] = 1;\n\n}\n\nif (message == \"wheelSpeed\")\n{\n    msg.payload = speed;\n}\n\ncontext.set('wheelSpeed1', speed1)\n\nif (message == \"tempDiffOil\")\n{   \n    msg.payload = \"1\";\n}\n\nif (message == \"tempGearboxOil\") \n{\n    msg.payload = \"1\";\n}\n\nif (message == \"pressDiffOil\")\n{\n    msg.payload = \"1\";\n}\n\nif (message == \"pressFuel\")\n{\n    msg.payload = \"1\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "7aeafdae939fd04a"
+            ]
+        ]
+    },
+    {
+        "id": "7aeafdae939fd04a",
+        "type": "function",
+        "z": "28ce83765b4a4deb",
+        "name": "Data Retrieve Function",
+        "func": "var button_message = msg.payload;\n\nif (button_message == \"1\")\n{\n    msg.topic = 'SELECT * FROM tempDiffOil ORDER  BY Time DESC LIMIT 10';\n}\n\nif (button_message == \"2\") \n{\n    msg.topic = 'SELECT * FROM tempGearboxOil ORDER  BY Time DESC LIMIT 10';\n}\n\nif (button_message == \"3\")\n {\n    msg.topic = 'SELECT * FROM pressDiffOil ORDER  BY Time DESC LIMIT 10';\n}\n\nif (button_message == \"4\")\n {\n    msg.topic = 'SELECT * FROM pressFuel ORDER  BY Time DESC LIMIT 10';\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6abd206a2bfc9a42",
+        "type": "debug",
+        "z": "28ce83765b4a4deb",
+        "name": "MySQL data",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1390,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "25fec40b4fbb8742",
+        "type": "ui_table",
+        "z": "28ce83765b4a4deb",
+        "group": "fe9ac9b5f6fbd91d",
+        "name": "Recent Data",
+        "order": 2,
+        "width": "3",
+        "height": "10",
+        "columns": [],
+        "outputs": 0,
+        "cts": false,
+        "x": 1390,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "872dcecdc020c95e",
+        "type": "ui_chart",
+        "z": "28ce83765b4a4deb",
+        "name": "Live Feed",
+        "group": "4a8a4666a1b48caf",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Live Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Waiting...",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#56f137",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1380,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9acecbcc3a993263",
+        "type": "function",
+        "z": "28ce83765b4a4deb",
+        "name": "convertChart",
+        "func": "var x;\nvar y;\n\nvar allData = msg.payload; // data incoming from MySQL\nvar data = []; //data sent to chart\n\nfor (let index = 0; index < allData.length; index++) {\n\n    const object = allData[index]; //{ p_Id: 5, Time: 6, Data: 7 };\n    const picked = (({ Time, Data }) => ({ Time, Data }))(object);\n    data[index] = picked;\n    //console.log(picked);  { a: 5, c: 7 }\n      \n}\nfor (let index = 0; index < data.length; index++) {\n    \n    const str = data[index].Time;\n    const date = new Date(str);\n\n    const timestamp = date.getTime();\n    data[index].Time = timestamp;\n    \n} \n\ndata = data.map(({Time: x, Data: y}) => ({x, y}));\n/*const newData = data.map(item =>\n    ({ x: item.name, y: item.title })\n);*/\n\n msg.payload = [{\n    \"series\": [\"A\", \"B\", \"C\", \"D\"],\n    \"data\": [data],\n    \"labels\": [\"room1\", \"room2\", \"room3\", \"room4\"]\n}] \n \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 280,
+        "wires": [
+            [
+                "872dcecdc020c95e",
+                "6abd206a2bfc9a42"
+            ]
+        ]
+    },
+    {
+        "id": "1791ee2976eca5ea",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Temperature Diff Oil ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "tempDiffOil",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "msg",
+        "x": 180,
+        "y": 540,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "197a6bcdbedab903",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Temperature Gearbox Oil ",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "tempGearboxOil",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "msg",
+        "x": 170,
+        "y": 600,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "c7db8d97578d97f4",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pressure Diff Oil",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pressDiffOil",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "msg",
+        "x": 200,
+        "y": 720,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "824823339b5234a1",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pressure Fuel",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "pressFuel",
+        "payloadType": "str",
+        "topic": "button",
+        "topicType": "msg",
+        "x": 200,
+        "y": 780,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "3d8cf1f870e477a4",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Temperature",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 500,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "310d2d08994a3a5c",
+        "type": "ui_button",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "group": "f51f8dc65510d76c",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Pressure",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 220,
+        "y": 680,
+        "wires": [
+            [
+                "a63ad29d430e4825"
+            ]
+        ]
+    },
+    {
+        "id": "76608d17dd62c005",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "Temperature Diff Oil ",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "tempDiffOil",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 460,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88888cc2614a4949",
+        "type": "ui_switch",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "label": "Temperature Gearbox Oil ",
+        "tooltip": "",
+        "group": "f51f8dc65510d76c",
+        "order": 13,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "tempGearboxOil",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 470,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "504579f55aeae531",
+        "type": "ui_ui_control",
+        "z": "28ce83765b4a4deb",
+        "name": "",
+        "events": "change",
+        "x": 580,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9def947f14f2cd4d",
+        "type": "debug",
+        "z": "28ce83765b4a4deb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "830f1168d403e621",
+        "type": "function",
+        "z": "28ce83765b4a4deb",
+        "name": "Button Display",
+        "func": "var message = msg.payload;\nvar speed1 = context.get('wheelSpeed1') || 0 ;\n\nvar speed = new Int8Array(4);\nconst temperature = new Int8Array(2);\nconst pressure = new Int8Array(2);\n\nif ( msg.topic == \"wheelSpeed1\")\n{\n    speed[0] = 1;\n    msg.payload = speed;\n}\n\nif (flow.wheelSpeed2 == true) {\n    speed[1] = 1;\n \n}\nif (flow.wheelSpeed3 == true) {\n    speed[2] = 1;\n\n}\nif (flow.wheelSpeed4 == true) {\n    speed[3] = 1;\n\n}\n\nif (message == \"wheelSpeed\")\n{\n    msg.payload = speed;\n}\n\ncontext.set('wheelSpeed1', speed1)\n\nif (message == \"tempDiffOil\")\n{   \n    msg.payload = \"1\";\n}\n\nif (message == \"tempGearboxOil\") \n{\n    msg.payload = \"1\";\n}\n\nif (message == \"pressDiffOil\")\n{\n    msg.payload = \"1\";\n}\n\nif (message == \"pressFuel\")\n{\n    msg.payload = \"1\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "761f098f3339c916",
+        "type": "comment",
+        "z": "2299ce1c5e0e7477",
+        "name": "Data Conversion",
+        "info": "",
+        "x": 400,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "04ff2b19ef1ae32a",
+        "type": "mqtt in",
+        "z": "2299ce1c5e0e7477",
+        "name": "",
+        "topic": "data",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "c0eaf4bfefec7d9b",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 320,
+        "wires": [
+            [
+                "855943dcf6833957",
+                "848595c798a92df7"
+            ]
+        ]
+    },
+    {
+        "id": "855943dcf6833957",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Split up string",
+        "func": "\nvar allData = msg.payload; // data incoming from broker\nvar data = allData.split(\";\"); //data array sent to next function node\n\nmsg.payload = {\n    \"time\": data[0],\n    \"sensor1\": data[1],\n    \"sensor2\": data[2],\n    \"sensor3\": data[3],\n    \"sensor4\": data[4],\n    \"sensor5\": data[5],\n    \"sensor6\": data[6],\n    \"sensor7\": data[7],\n    \"sensor8\": data[8],\n} \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 320,
+        "wires": [
+            [
+                "83053887fc1428c4",
+                "e6a248141f763501",
+                "591c3c0a176e9a30",
+                "8715a96bcce4784b",
+                "3e5e259ff2482eed",
+                "594c91c5173585e8",
+                "7ba99db9a659a98f",
+                "ce655070ec9468de"
+            ]
+        ]
+    },
+    {
+        "id": "13624b9bacd2c809",
+        "type": "mysql",
+        "z": "2299ce1c5e0e7477",
+        "mydb": "d18fd53d04b9d41a",
+        "name": "To Database",
+        "x": 1110,
+        "y": 300,
+        "wires": [
+            [
+                "44bbc4465b85c29e"
+            ]
+        ]
+    },
+    {
+        "id": "83053887fc1428c4",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 1 - tempDiffOil",
+        "func": "var dataString = msg.payload.sensor1;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO tempDiffOil(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "24f7df4e7cb0370c",
+        "type": "inject",
+        "z": "2299ce1c5e0e7477",
+        "name": "Create Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "CREATE TABLE speedBRWheel(   p_Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,   Time TIMESTAMP,   Data int  DEFAULT NULL );",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "819526543feb6c6a",
+        "type": "inject",
+        "z": "2299ce1c5e0e7477",
+        "name": "Inject Data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "5",
+        "payloadType": "str",
+        "x": 120,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3d9258c3c5eee49b",
+        "type": "inject",
+        "z": "2299ce1c5e0e7477",
+        "name": "Delete Table",
+        "props": [
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "DROP TABLE wheelSpeedSensor;",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db911b66a27857b5",
+        "type": "comment",
+        "z": "2299ce1c5e0e7477",
+        "name": "SQL Commands",
+        "info": "",
+        "x": 140,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "44bbc4465b85c29e",
+        "type": "debug",
+        "z": "2299ce1c5e0e7477",
+        "name": "Check incoming data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1340,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "848595c798a92df7",
+        "type": "debug",
+        "z": "2299ce1c5e0e7477",
+        "name": "After split string",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "e6a248141f763501",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 2 - tempGearboxOil",
+        "func": "var dataString = msg.payload.sensor2;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO tempGearboxOil(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "ce655070ec9468de",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 3 - pressDiffOil",
+        "func": "var dataString = msg.payload.sensor3;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO pressDiffOil(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 260,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "7ba99db9a659a98f",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 4 - pressFuel",
+        "func": "var dataString = msg.payload.sensor4;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO pressFuel(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 300,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "594c91c5173585e8",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 5 - speedFLWheel",
+        "func": "var dataString = msg.payload.sensor5;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO speedFLWheel(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "3e5e259ff2482eed",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 6 - speedFRWheel",
+        "func": "var dataString = msg.payload.sensor6;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO speedFRWheel(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 380,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "8715a96bcce4784b",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 7 - speedBLWheel",
+        "func": "var dataString = msg.payload.sensor7;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO speedBLWheel(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 420,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "591c3c0a176e9a30",
+        "type": "function",
+        "z": "2299ce1c5e0e7477",
+        "name": "Sensor 8 - speedBRWheel",
+        "func": "var dataString = msg.payload.sensor8;\nvar timeString = msg.payload.time;\nvar dataInt = parseInt(dataString);\n\nmsg.payload = [[timeString, dataInt]];\nmsg.topic = 'INSERT INTO speedBRWheel(Time, Data) VALUES (?);';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 460,
+        "wires": [
+            [
+                "13624b9bacd2c809"
+            ]
+        ]
+    },
+    {
+        "id": "77a210263d8b8664",
+        "type": "comment",
+        "z": "2299ce1c5e0e7477",
+        "name": "Send payload to each database table",
+        "info": "",
+        "x": 770,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bdfd9855149fbfd6",
+        "type": "mqtt out",
+        "z": "2299ce1c5e0e7477",
+        "name": "Publish",
+        "topic": "data",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "c0eaf4bfefec7d9b",
+        "x": 520,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "bdb973d5c33282ca",
+        "type": "inject",
+        "z": "2299ce1c5e0e7477",
+        "name": "Send fake data",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2022-12-13 15:17:12;11;22;33;63;90;76;7;99",
+        "payloadType": "str",
+        "x": 140,
+        "y": 40,
+        "wires": [
+            [
+                "bdfd9855149fbfd6"
+            ]
+        ]
+    }
+]

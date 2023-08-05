@@ -1,0 +1,102 @@
+body {
+    background-color: #148484;
+    color: #f2f2f2;   
+  }
+
+  .topButtons {
+    display: flex; /* use flexbox to display the buttons next to each other */
+    justify-content: flex-start; /* align the buttons to the left */
+    align-items: center; /* vertically center the buttons */
+    /*position: fixed; /* position the container fixed to the viewport */
+    top: 0; /* position the container at the top of the viewport */
+    left: 0%; /* position the container at the left of the viewport */
+    width: 75%; /* set the width of the container to 100% of the viewport */
+    /*background-color: #148484; /* set the background color of the container */
+    padding: 10px; /* add some padding to the container */
+    /*border-radius: 10px;
+    border: solid 3px #FFFFFF;*/
+  }
+  .topButtons form {
+    margin-right: 15px; /* add some margin between the buttons */
+  }
+
+  .liveDataTop {
+    align-items: center; /* vertically center the buttons */
+    /*position: fixed; /* position the container fixed to the viewport */
+    /*width: 75%; /* set the width of the container to 100% of the viewport */
+    /*background-color: #148484; /* set the background color of the container */
+    padding: 10px; /* add some padding to the container */
+    border-radius: 10px;
+    border: solid 3px #FFFFFF;
+    text-align: center;
+  }
+
+  .userContainer {
+    align-items: center; /* vertically center the buttons */
+    padding: 10px; /* add some padding to the container */
+    border-radius: 10px;
+    border: solid 3px #FFFFFF;
+    text-align: center;
+  }
+  .userSelect{
+    display: inline-block;
+    width: 20%;
+		height: 100px;
+		border-radius: 10px;
+		margin-right: 10px;
+  }
+
+  .userLive{
+    border: solid 3px #FFFFFF;
+  }
+
+  
+  .legendButton{
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  .dataContainer {
+    display: flex;
+    overflow-x: scroll;
+    height: 750px;
+    width: 100%; /* set the desired width */
+    max-width: 95%;
+    margin: 0 auto; /* center the container horizontally */padding: 5px;
+    border-radius: 10px;
+    border: solid 3px #FFFFFF;
+    background-color: #81C8BD;
+    background: repeating-linear-gradient(
+    to top,
+    #148484 0px,
+    #148484 27%,
+    #81C8BD 27%,
+    #81C8BD 50%,
+    #148484 50%,
+    #148484 72.7%,
+    #81C8BD 72.7%,
+    #81C8BD  
+  );
+      
+  }
+
+  .dataGraph {
+    
+    height: 100%;
+    
+  }
+
+  .dataRecent{
+    margin-top: 20px;
+  }
+
+  .dataLive {
+    padding: 5px;
+    align-items: center; /* vertically center the buttons */
+    text-align: center;
+    height: 24%;
+  }

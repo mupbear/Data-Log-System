@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/S3-main-code.dir/main.cpp.o -o S3-main-code  libproj-lib.a -llgpio -lnsl -lpthread 

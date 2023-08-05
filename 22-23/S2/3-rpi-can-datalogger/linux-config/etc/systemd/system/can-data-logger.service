@@ -1,0 +1,10 @@
+[Unit]
+Description=Python CAN Data Logger
+
+[Service]
+ExecStart=/usr/local/bin/can-data-logger
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target

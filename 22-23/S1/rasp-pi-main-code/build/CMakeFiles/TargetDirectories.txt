@@ -1,0 +1,4 @@
+/home/pi/Desktop/Data-Log-System-S3/rasp-pi-main-code/build/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/rasp-pi-main-code/build/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/rasp-pi-main-code/build/CMakeFiles/proj-lib.dir
+/home/pi/Desktop/Data-Log-System-S3/rasp-pi-main-code/build/CMakeFiles/S3-main-code.dir

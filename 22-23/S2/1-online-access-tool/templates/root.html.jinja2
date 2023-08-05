@@ -1,0 +1,63 @@
+{% extends "base/base.html.jinja2" %}
+{% set active_page = "root" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for_static_asset('static', 'css/root.css') }}">
+<script defer src="{{ url_for_static_asset('static', 'js/root.js') }}"> </script>
+{% endblock head %}
+
+{% block main %}
+<img src="{{ url_for_static_asset('static', 'img/car1.jpeg')  }}" alt="Car #1" class="car1">
+<img src="{{ url_for_static_asset('static', 'img/car2.jpeg')  }}" alt="Car #2" class="car2">
+
+<a href="https://regterschotracing.com/" target="_blank">
+  <img src="{{ url_for_static_asset('static', 'img/reg_race.png') }}" alt="Company link" class="reg_race">
+</a>
+
+<h1></h1>
+<p style="padding-bottom: 55px;">
+
+<!-- <form action="backend/login.php" method="post">
+  <?php if (isset($_GET['error'])) { ?>
+      <p class="error"><?php echo $_GET['error']; ?></p>
+  <?php } ?>
+
+  <label>User Name</label>
+  <input type="text" name="uname" placeholder="User Name"><br>
+
+  <label>Password</label>
+  <input type="password" name="password" placeholder="Password"><br> 
+
+  <button type="submit">Login</button>
+</form> -->
+
+<p style="padding-bottom: 10px;">
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <center><img src="{{ url_for_static_asset('static', 'img/img1.JPG')  }}" style="width:700px;height:400px;"></center>
+  </div>
+
+  <div class="mySlides fade">
+    <center><img src="{{ url_for_static_asset('static', 'img/img2.JPG')  }}" style="width:700px;height:400px;"></center>
+  </div>
+
+  <div class="mySlides fade">
+    <center><img src="{{ url_for_static_asset('static', 'img/img3.JPG')  }}" style="width:700px;height:400px;"></center>
+  </div>
+
+  <div class="mySlides fade">
+    <center><img src="{{ url_for_static_asset('static', 'img/img4.JPG')  }}" style="width:700px;height:400px;"></center>
+  </div>
+</div>
+
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div class="curvy-line"></div>
+{% endblock main %}

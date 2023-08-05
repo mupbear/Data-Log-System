@@ -1,0 +1,4 @@
+/home/pi/Desktop/Data-Log-System-S3/mqtt_sub/cmake-build-raspberry-pi/CMakeFiles/rebuild_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_sub/cmake-build-raspberry-pi/CMakeFiles/edit_cache.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_sub/cmake-build-raspberry-pi/CMakeFiles/mqttc.dir
+/home/pi/Desktop/Data-Log-System-S3/mqtt_sub/cmake-build-raspberry-pi/CMakeFiles/mqtt_sub.dir
