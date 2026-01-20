@@ -16,24 +16,21 @@ void setup()
   mcp2515.setNormalMode();
 
   canMsgTX.can_id  = 0x040;           //CAN id as 0x036
-  canMsgTX.can_dlc = 1;               //CAN data length as 1 byte
+  canMsgTX.can_dlc = 8;               //CAN data length as 1 byte
 }
 
 void loop()
 {
   // sends data
   canMsgTX.data[0] = 12;        //Update pot value in [0] 
+  canMsgTX.data[1] = 12;
+  canMsgTX.data[2] = 12;
+  canMsgTX.data[3] = 12;
+  canMsgTX.data[4] = 12;
+  canMsgTX.data[5] = 12;
+  canMsgTX.data[6] = 12;
+  canMsgTX.data[7] = 12;
   mcp2515.sendMessage(&canMsgTX);     //Sends the CAN message
   
-  // receives data
-  if (mcp2515.readMessage(&canMsgRX) == MCP2515::ERROR_OK) // To receive data (Poll Read)
-  {
-    if (canMsgRX.can_id == 0x036)
-    {
-      int x = canMsgRX.data[0];
-      Serial.println("Message:");
-      Serial.println(x);
-    }
-  }
-  delay(200);
+  delay(1000);
 }
