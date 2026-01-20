@@ -1,0 +1,47 @@
+sequenceDiagram
+    autonumber
+    participant S as Sensors
+    participant A as Arduino
+    participant CAN as CAN Bus
+    participant Pi as Raspberry Pi
+    participant DB as MySQL Database
+    participant MQTT as MQTT Broker
+    participant UI as Angular Dashboard
+    participant U as User
+
+    rect rgb(240, 248, 255)
+        Note over S,A: Data Acquisition Layer
+        S->>A: Analog sensor readings
+        A->>A: Convert to digital values
+        A->>A: Encode CAN frame
+        A->>CAN: Transmit CAN frame (500 KBPS)
+    end
+
+    rect rgb(255, 248, 240)
+        Note over CAN,DB: Data Processing Layer
+        CAN->>Pi: CAN frame received
+        Pi->>Pi: Decode CAN frame
+        Pi->>Pi: Queue data (5 sec buffer)
+        Pi->>DB: INSERT sensor data
+        DB-->>Pi: Confirm insertion
+        Pi->>MQTT: Publish to topic
+    end
+
+    rect rgb(240, 255, 240)
+        Note over MQTT,U: Presentation Layer
+        U->>UI: Open dashboard
+        UI->>UI: Check authentication
+        UI->>MQTT: Subscribe to topics
+        MQTT-->>UI: Real-time data stream
+        UI->>UI: Update charts/gauges
+        UI-->>U: Display telemetry
+    end
+
+    rect rgb(255, 240, 245)
+        Note over U,DB: Historical Query Flow
+        U->>UI: Select race event
+        UI->>DB: Query historical data
+        DB-->>UI: Return dataset
+        UI->>UI: Render graphs
+        UI-->>U: Display analysis
+    end

@@ -1,0 +1,53 @@
+stateDiagram-v2
+    [*] --> Initializing: System boot
+
+    state Initializing {
+        [*] --> LoadConfig
+        LoadConfig --> InitCAN: Config loaded
+        InitCAN --> InitDB: CAN ready
+        InitDB --> Ready: DB connected
+        InitDB --> DBError: Connection failed
+        DBError --> InitDB: Retry
+    }
+
+    Initializing --> Idle: Initialization complete
+
+    state Idle {
+        [*] --> WaitingForData
+        WaitingForData --> WaitingForData: No CAN frame
+    }
+
+    Idle --> Capturing: CAN frame received
+    Idle --> Error: Hardware fault
+
+    state Capturing {
+        [*] --> ReadFrame
+        ReadFrame --> DecodeFrame: Frame received
+        DecodeFrame --> QueueData: Data decoded
+        QueueData --> CheckBuffer: Data queued
+        CheckBuffer --> ReadFrame: Buffer not full
+        CheckBuffer --> SendBatch: 5 seconds elapsed
+        SendBatch --> ReadFrame: Batch sent
+    }
+
+    Capturing --> Idle: No more data
+    Capturing --> Error: CAN error
+
+    state Error {
+        [*] --> LogError
+        LogError --> AttemptRecovery
+        AttemptRecovery --> Recovered: Recovery success
+        AttemptRecovery --> CriticalFailure: Recovery failed
+    }
+
+    Error --> Idle: Recovered
+    CriticalFailure --> [*]: Shutdown
+
+    state "Race Event Active" as RaceEvent {
+        [*] --> EventStarted
+        EventStarted --> LoggingWithEvent: Recording
+        LoggingWithEvent --> EventEnded: Admin ends event
+    }
+
+    Capturing --> RaceEvent: Start event command
+    RaceEvent --> Capturing: Event finished

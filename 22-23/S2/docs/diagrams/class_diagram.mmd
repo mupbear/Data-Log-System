@@ -1,0 +1,106 @@
+classDiagram
+    class AuthService {
+        -tokenKey: string
+        +login(credentials: loginModel): Observable
+        +logout(): void
+        +isLoggedIn(): boolean
+        +getToken(): string
+    }
+
+    class HttpService {
+        -http: HttpClient
+        -_url: string
+        +getSensors(): Observable
+        +getRaces(): Observable
+        +getTabs(): Observable
+        +postTab(tab: Tab): Observable
+        +deleteTab(id: number): Observable
+    }
+
+    class LoginComponent {
+        -authService: AuthService
+        -router: Router
+        -loginForm: FormGroup
+        +onSubmit(): void
+        +ngOnInit(): void
+    }
+
+    class TabsComponent {
+        -httpService: HttpService
+        -tabs: Tab[]
+        -selectedTab: Tab
+        +ngOnInit(): void
+        +addTab(): void
+        +deleteTab(id: number): void
+        +selectTab(tab: Tab): void
+    }
+
+    class OverviewComponent {
+        -httpService: HttpService
+        -sensorData: any[]
+        +ngOnInit(): void
+        +updateCharts(): void
+    }
+
+    class Tab {
+        +id: number
+        +name: string
+        +graphs: Graph[]
+    }
+
+    class Graph {
+        +id: number
+        +name: string
+        +type: string
+        +tabId: number
+        +settings: any
+    }
+
+    class RawDataSender {
+        -_cnx: MySQLConnection
+        -_cursor: Cursor
+        -_queue: List
+        +__init__(user, password, host, database)
+        +queue(sensor_id, value, timestamp): void
+        +send(): void
+        +__del__(): void
+    }
+
+    class PressureSensor {
+        -rawValue: int
+        -sensorResistance: float
+        +read(): float
+        +calculate_pressure(): float
+    }
+
+    class TemperatureSensor {
+        -rawValue: int
+        -resistance: float
+        +read(): float
+        +convert_to_celsius(): float
+    }
+
+    class WheelSpeedSensor {
+        -pulseCount: int
+        -wheelCircumference: float
+        +read(): float
+        +calculate_speed(): float
+    }
+
+    class CANController {
+        -mcp2515: MCP2515
+        +init(): void
+        +sendFrame(id, data): void
+        +receiveFrame(): CANFrame
+    }
+
+    AuthService <-- LoginComponent : uses
+    HttpService <-- TabsComponent : uses
+    HttpService <-- OverviewComponent : uses
+    Tab "1" *-- "many" Graph : contains
+
+    CANController <-- PressureSensor : sends data
+    CANController <-- TemperatureSensor : sends data
+    CANController <-- WheelSpeedSensor : sends data
+
+    RawDataSender <.. CANController : receives from

@@ -1,0 +1,38 @@
+flowchart LR
+    subgraph Actors
+        RE[("👤 Race Engineer")]
+        DA[("👤 Data Analyst")]
+        AD[("👤 Administrator")]
+        SS[("⚙️ Sensor System")]
+    end
+
+    subgraph "Data-Log-System"
+        UC1["UC-01<br/>User Login"]
+        UC2["UC-02<br/>Capture Sensor Data"]
+        UC3["UC-03<br/>View Real-time Dashboard"]
+        UC4["UC-04<br/>Track GPS Location"]
+        UC5["UC-05<br/>Manage Race Event"]
+        UC6["UC-06<br/>Create Analysis Tab"]
+        UC7["UC-07<br/>Query Historical Data"]
+    end
+
+    RE --> UC1
+    RE --> UC3
+    RE --> UC4
+
+    DA --> UC1
+    DA --> UC6
+    DA --> UC7
+    DA --> UC4
+
+    AD --> UC1
+    AD --> UC5
+
+    SS --> UC2
+
+    UC3 -.->|includes| UC1
+    UC4 -.->|includes| UC1
+    UC5 -.->|includes| UC1
+    UC6 -.->|includes| UC1
+    UC7 -.->|includes| UC1
+    UC6 -.->|extends| UC7
